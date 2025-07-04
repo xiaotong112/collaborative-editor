@@ -18,7 +18,9 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+    "baseUrl": "./src",
     "paths": {
+      "@/*": ["./*"],
       "@collaborative-editor/shared-types": ["../../libs/shared-types"],
       "@collaborative-editor/shared-utils": ["../../libs/shared-utils"]
     }

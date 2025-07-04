@@ -1,5 +1,7 @@
+import { RouterProvider } from 'react-router-dom';
+import { router } from './router/index.tsx';
 function App() {
-  return <div>helloworld</div>;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
