@@ -9,7 +9,7 @@
     "target": "ES2023",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
@@ -17,11 +17,18 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "paths": {
+      "@/*": ["./*"],
+      "@modules/*": ["./modules/*"],
       "@collaborative-editor/shared-types": ["../../libs/shared-types"],
       "@collaborative-editor/shared-utils": ["../../libs/shared-utils"]
     }
   },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "test"],
   "references": [
     { "path": "../../libs/shared-types" },
     { "path": "../../libs/shared-utils" }
