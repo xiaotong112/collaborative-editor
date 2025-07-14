@@ -2,7 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import { Login } from '../pages/Login';
 import { Layout } from '../components/Layout';
 import { Workspace } from '../pages/Workspace';
-import { DocumentEditor } from '../pages/DocumentEditor';
+import { DocumentEditor } from '../pages/DocumentEditor/index';
 import { WhiteboardEditor } from '../pages/WhiteboardEditor';
 
 export const router = createBrowserRouter([

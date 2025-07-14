@@ -20,13 +20,16 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@collaborative-editor/shared-types": "workspace:*",
+    "@collaborative-editor/shared-utils": "workspace:*",
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
+    "@types/ws": "^8.18.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
-    "@collaborative-editor/shared-types": "workspace:*",
-    "@collaborative-editor/shared-utils": "workspace:*"
+    "ws": "^8.18.3",
+    "y-websocket": "^3.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.0",
