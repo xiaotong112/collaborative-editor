@@ -18,7 +18,9 @@ export default tseslint.config(
       '**/build/**',
       'eslint.config.mjs',
       '**/vite.config.ts',
-      '**/vite.config.js'
+      '**/vite.config.js',
+      '**/*.ts',
+      '**/*.tsx'
     ],
   },
 
