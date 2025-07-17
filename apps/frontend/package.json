@@ -12,6 +12,7 @@
   "dependencies": {
     "@collaborative-editor/shared-types": "workspace:*",
     "@collaborative-editor/shared-utils": "workspace:*",
+    "@excalidraw/excalidraw": "^0.18.0",
     "@types/quill": "^2.0.14",
     "lucide-react": "^0.525.0",
     "quill": "^2.0.3",
