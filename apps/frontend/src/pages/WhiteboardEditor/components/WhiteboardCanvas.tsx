@@ -49,6 +49,7 @@ export const WhiteboardCanvas = ({
             viewBackgroundColor: '#ffffff',
           },
         }}
+        langCode={'zh-CN'}
         UIOptions={{
           canvasActions: {
             loadScene: true,

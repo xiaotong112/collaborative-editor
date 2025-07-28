@@ -1,18 +1,18 @@
+import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  const configService = app.get(ConfigService);
+
   app.setGlobalPrefix('api');
-  
-  // 启用 CORS
-  app.enableCors({
-    origin: 'http://localhost:5173',
-    credentials: true,
+  app.enableCors();
+
+  await app.listen(configService.get('PORT') ?? 3000, () => {
+    console.log(
+      `🚀 Server running on http://localhost:${configService.get<number>('PORT') ?? 3000}`
+    );
   });
-  
-  await app.listen(3000);
-  console.log('🚀 Server running on http://localhost:3000');
-  console.log('📡 WebSocket server running on ws://localhost:3001');
 }
 bootstrap();
