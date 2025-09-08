@@ -79,8 +79,9 @@ import { WhiteboardModule } from './modules/whiteboard/whiteboard.module';
         }>
       ) {
         return {
-          endPoint: configService.get('MINIO_HOST') ?? '8.155.56.55',
+          endPoint: configService.get('MINIO_HOST') ?? 'frps.ucstu.com',
           port: configService.get('MINIO_PORT') ?? 9000,
+          useSSL: false,
         };
       },
     }),
